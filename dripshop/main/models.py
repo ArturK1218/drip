@@ -49,7 +49,7 @@ class ClothingItem(models.Model):
 
     def get_price_with_discount(self):
         if self.discount > 0:
-            return self.price * (1 - (self.discont / 100))
+            return self.price * (1 - (self.discount / 100))
 
         
 class ClothingItemSize(models.Model):
