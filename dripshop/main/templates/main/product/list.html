@@ -47,7 +47,7 @@
                                 {% if item.discount %}
                                     <div class="cart-discount d-flex gap-2">
                                         <p class="line price-on-card">${{ item.price }}</p>
-                                        <p class="price">${{ item.get_price_with_discount|floatformat:2 }}</p>
+                                        {% comment "" %}<p class="price">${{ item.get_price_with_discount|floatformat:2 }}</p>{% endcomment %}
                                     </div>
                                 {% else %}
                                     <p class="detail-price">
