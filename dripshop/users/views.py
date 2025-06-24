@@ -6,7 +6,7 @@ from .forms import UserRegistrationForm, UserLoginForm, \
     UserProfileForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
-
+from orders.models import Order
 
 
 def register(request):
